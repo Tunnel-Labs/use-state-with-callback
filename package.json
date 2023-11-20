@@ -1,0 +1,8 @@
+{
+  "name": "@tunnel/use-state-with-callback",
+  "version": "0.0.0",
+  "type": "module",
+  "peerDependencies": {
+    "react": "^18"
+  }
+}
