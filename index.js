@@ -1,3 +1,5 @@
+// @ts-check
+
 "use client";
 
 import {
@@ -47,6 +49,7 @@ const useStateWithCallbackLazy = (initialValue) => {
 
   useEffect(() => {
     if (callbackRef.current) {
+      // @ts-expect-error: unknown type
       callbackRef.current(value);
 
       callbackRef.current = null;
