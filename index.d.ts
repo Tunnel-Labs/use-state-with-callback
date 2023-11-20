@@ -1,6 +1,6 @@
 import type { SetStateAction, Dispatch } from "react";
 
-export type DispatchWithCallback<A, S> = (value: A, callback: Callback<S>) => void;
+export type DispatchWithCallback<A, S> = (value: A, callback?: Callback<S>) => void;
 
 export type Callback<S> = (state: S) => void | (() => void | undefined);
 
